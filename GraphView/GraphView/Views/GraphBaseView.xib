@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11201"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GraphBaseView" customModule="GraphView" customModuleProvider="target">
+            <connections>
+                <outlet property="dateView" destination="ogu-jT-D7z" id="AR1-Ih-jRA"/>
+                <outlet property="divisionView" destination="0sy-3N-aM3" id="AGY-8G-AYt"/>
+                <outlet property="graphView" destination="Fl3-ur-8HZ" id="DuK-cI-dKa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogu-jT-D7z" customClass="DateView" customModule="GraphView" customModuleProvider="target">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="uxL-4I-55I"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sy-3N-aM3" customClass="DivisionView" customModule="GraphView" customModuleProvider="target">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="jJ7-f3-Tuh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fl3-ur-8HZ" customClass="GraphView" customModule="GraphView" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.48424866890000001" green="0.83838182589999999" blue="0.85059331410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901959999995" green="0.5568627451" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Fl3-ur-8HZ" firstAttribute="leading" secondItem="ogu-jT-D7z" secondAttribute="leading" id="7Xs-hs-NeJ"/>
+                <constraint firstItem="Fl3-ur-8HZ" firstAttribute="leading" secondItem="0sy-3N-aM3" secondAttribute="trailing" id="87x-Yi-deM"/>
+                <constraint firstItem="0sy-3N-aM3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ld2-Ej-eNt"/>
+                <constraint firstAttribute="trailing" secondItem="Fl3-ur-8HZ" secondAttribute="trailing" id="QBN-AH-rED"/>
+                <constraint firstItem="Fl3-ur-8HZ" firstAttribute="top" secondItem="0sy-3N-aM3" secondAttribute="top" id="VGf-Qe-Wty"/>
+                <constraint firstAttribute="bottom" secondItem="Fl3-ur-8HZ" secondAttribute="bottom" id="aqS-xg-ne1"/>
+                <constraint firstItem="Fl3-ur-8HZ" firstAttribute="top" secondItem="ogu-jT-D7z" secondAttribute="bottom" id="cqD-ed-ZOd"/>
+                <constraint firstAttribute="bottom" secondItem="0sy-3N-aM3" secondAttribute="bottom" id="hwv-h9-Edo"/>
+                <constraint firstAttribute="trailing" secondItem="ogu-jT-D7z" secondAttribute="trailing" id="ifx-3d-You"/>
+                <constraint firstItem="ogu-jT-D7z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lq4-3Z-RFp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
